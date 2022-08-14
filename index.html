@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>SASS</title>
+    <script>
+function toggleMenu() {
+  var x = document.getElementById("navigation");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+          </script>
   </head>
   <body>
     <div class="main-wrapper" >
       <header class="header">
         <nav class="nav-container container">
           <img src="./assets/Logo.png" alt="Logo" class="logo"/>
-          <div class="page-header__toggle" onclick="toggleMenu()">☰</div>
-          <ul class="nav-links page-header__bottom">
+          <div class="page-header__toggle" onclick="toggleMenu()">☰
+          <ul id="navigation" style="display:none;" class="nav-links navigation navigation--visible page-header__toggle ">
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Pricing</a></li>
@@ -21,6 +31,18 @@
             <li><a href="#">Blogs</a></li>
             <li><button class="nav-btn">FREE TRIAL</button></li>
           </ul>
+        </div>
+        
+          <div class="page-header__bottom">
+          <ul class="nav-links navigation navigation--visible ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><button class="nav-btn">FREE TRIAL</button></li>
+          </ul>
+        </div>
         </nav>
 
         <div class="hero-container container">
@@ -137,12 +159,6 @@
       </div>
     </div>
   </div>
-    <script>
-
-let nav = document.getElementById('navigation');
-function toggleMenu() {
-  nav.classList.toggle('navigation--visible');
-}
-    </script>
+   
   </body>
 </html>

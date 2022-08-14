@@ -1,8 +1,12 @@
+# Project 13 - HTML ![](./readmeImages/html-5.png) and CSS ![](./readmeImages/css-3.png)
+
+By Pooja
+
 Here's the Live Deployed Website ![Project 13]()
 
 ## [DEPLOYED WEBSITE LINK]()
 
-![Completed Website](./readmeImages/screencapture.png)
+![Completed Website](./readmeImages/completedScreenshot.jpg)
 
 ## What I learned from this Project?
 
